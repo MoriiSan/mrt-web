@@ -22,7 +22,7 @@ export default function Login() {
 
     useEffect(() => {
         if (isAuthenticated()) {
-            navigate('/card');
+            navigate('/admin'); // navigate('card');
         }
     }, [isAuthenticated, navigate]);
 
