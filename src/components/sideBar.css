@@ -1,0 +1,126 @@
+
+.sidebar {
+  position: absolute;
+  z-index: 1;
+    background-color: #566254;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 100svh;
+    padding: 20px;
+    transition: width 0.3s ease;
+  }
+
+  .arrow {
+    background-color: #e2edec;
+    color: #566254;
+    font-size: 30px;
+    line-height: 36px;
+    border-radius: 50%;
+    position: absolute;
+    right: -12px;
+    top: 36px;
+    border: 2px solid #566254;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .logo {
+    background-color: #dfb53f;
+    color: #415b5c;
+    font-size: 2.25rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: transform 0.5s ease;
+    padding: 0.5rem;
+  }
+ 
+  .logo-title {
+    color: #e2edec;
+    transform-origin: left;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100%;
+    text-align: center;
+    background-color: #697467;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #dfb53f;
+    transition: transform 0.3s ease;
+  }
+
+  .border-input {
+    display: flex;
+    flex: 1 0 100%;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid #dfb53f;
+    margin-top: 0.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .hash {
+    color: #dfb53f;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .input {
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 100%;
+    color: #e2edec;
+    outline: none;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
+  
+  .reset-button {
+    display: flex;
+    flex: 1 0 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2edec;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .submit-button {
+    display: flex;
+    flex: 1 0 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 1px solid #415b5c;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+  
+  

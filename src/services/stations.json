@@ -1,0 +1,20 @@
+{
+    "stations": [
+        {
+            "id": 1,
+            "stationName": "Taft Avenue"
+        },
+        {
+            "id": 2,
+            "stationName": "Magallanes"
+        },
+        {
+            "id": 3,
+            "stationName": "Ayala"
+        },
+        {
+            "id": 4,
+            "stationName": "Buendia"
+        }
+    ]
+}

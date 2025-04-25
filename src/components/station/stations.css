@@ -1,0 +1,535 @@
+.mapAdmin-container {
+    position: absolute;
+    left: 0;
+    height: 84.2%;
+}
+
+@media screen and (max-width: 1024px) {
+    .mapAdmin-container {
+        height: 92svh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mapAdmin-container {
+        height: 89.5svh;
+    }
+}
+
+.fare-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffb031;
+    border-radius: 5px 0 0 5px;
+    padding: 5px 8px 5px 8px;
+    gap: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-edit-fare {
+    color: #ffb031;
+    border: 1px solid #ffb031;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 8px 5px 8px;
+}
+
+.fare-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fare-status {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fare-value2 {
+    font-weight: 700;
+    color: #477a1e;
+}
+
+.edit-fare-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fare-label {
+    padding: 5px 10px 5px 10px;
+    border-right: 1px solid #ccc;
+}
+
+.edit-fare {
+    padding: 5px 0 5px 10px;
+    width: 100%;
+}
+
+.fare-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    gap: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 80svh;
+    padding: 1%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* ADD-STATION ////////////////////// */
+
+.add-station-overlay,
+.delete-station-overlay {
+    background: rgba(49, 49, 49, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.add-station-modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 415px;
+    border-radius: 5px;
+    left: 3%;
+    transform: translateX(-50%);
+    top: 55%;
+    transform: translateY(-50%);
+    gap: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.add-station-indicator {
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 5px 5px 0 0;
+    background-color: #28a745;
+    color: white;
+    font-weight: 700;
+}
+
+.add-contents {
+    padding: 10px 20px;
+}
+
+.station-name,
+.station-shortname,
+.lat-coord,
+.long-coord {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 375px;
+    padding-inline: 10px;
+}
+
+.lat-coord,
+.long-coord {
+    width: 182px;
+}
+
+.station-coords {
+    gap: 10px;
+}
+
+.station-name:focus,
+.station-shortname:focus,
+.lat-coord:focus,
+.long-coord:focus {
+    outline-color: #ffb031;
+}
+
+.station-label,
+.shortname-label,
+.lat-label,
+.long-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.station-coords {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-station-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 20px;
+    gap: 10px;
+}
+
+.cancel-btn,
+.add-station-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-station-btn {
+    border: 1px solid #28a745;
+}
+
+
+
+/* DELETE STATION   ///////// */
+
+.delete-station-modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 415px;
+    border-radius: 5px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+    box-shadow: 0 0 6px black;
+}
+
+.delete-indicator {
+    height: 20px;
+    border-radius: 5px 5px 0 0;
+    background-color: #f62447;
+}
+
+.delete-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.delete-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-icon {
+    color: #f62447;
+}
+
+.delete-btns {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    gap: 10px;
+}
+
+.cancel-delete-btn,
+.delete-station-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.delete-station-btn {
+    border: 1px solid #f62447;
+}
+
+
+/* EDIT STATIONS ////////// */
+
+.edit-station-modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 415px;
+    border-radius: 5px;
+    left: 3%;
+    transform: translateX(-50%);
+    top: 55%;
+    transform: translateY(-50%);
+    gap: 10px;
+    box-shadow: 2px 2px 6px #888888;
+}
+
+.edit-indicator {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 5px 5px 0 0;
+    background-color: #ffb031;
+    color: #202020;
+    font-weight: 700;
+}
+
+.edit-exit {
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    background-color: #ffb031;
+    color: black;
+    font-weight: 700;
+}
+
+.edit-contents {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+    color: #202020;
+}
+
+.edit-station-label,
+.edit-shortname-label,
+.edit-lat-label,
+.edit-long-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-station-coords {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.edit-station-name,
+.edit-station-shortname,
+.edit-lat-coord,
+.edit-long-coord {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    width: 375;
+    padding-inline: 10px;
+}
+
+.edit-lat-coord,
+.edit-long-coord {
+    width: 182px;
+}
+
+.edit-station-name:focus,
+.edit-station-shortname:focus,
+.edit-lat-coord:focus,
+.edit-long-coord:focus {
+    outline-color: #ffb031;
+}
+
+.edit-station-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0 20px 20px 20px;
+    /* border-top: 1px solid #888; */
+}
+
+.edit-delete-btn,
+.edit-station-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.edit-delete-btn {
+    border: 1px solid #f62447;
+}
+
+.edit-station-btn {
+    border: 1px solid #477a1e;
+}
+
+/* responsiveness ///////// */
+@media screen and (max-width: 600px) {
+
+    .add-station-modal,
+    .edit-station-modal,
+    .delete-station-modal {
+        width: 370px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .add-station-indicator,
+    .edit-indicator {
+        width: 370px;
+    }
+
+    .station-name,
+    .station-shortname,
+    .lat-coord,
+    .long-coord {
+        width: 330px;
+    }
+
+    .edit-station-name,
+    .edit-station-shortname,
+    .edit-lat-coord,
+    .edit-long-coord {
+        width: 330px;
+    }
+
+    .lat-coord,
+    .long-coord,
+    .edit-lat-coord,
+    .edit-long-coord {
+        width: 160px;
+    }
+}
+
+/* toggle switch ////////////////////// */
+.switch-label {
+    color: #888888;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.form-switch {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form-switch i {
+    position: relative;
+    display: inline-block;
+    margin-right: .5rem;
+    width: 46px;
+    height: 26px;
+    background-color: #e6e6e6;
+    border-radius: 23px;
+    vertical-align: text-bottom;
+    transition: all 0.3s linear;
+}
+
+.form-switch i::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 42px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+    transition: all 0.25s linear;
+}
+
+.form-switch i::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+    transform: translate3d(2px, 2px, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-switch:active i::after {
+    width: 28px;
+    transform: translate3d(2px, 2px, 0);
+}
+
+.form-switch:active input:checked+i::after {
+    transform: translate3d(16px, 2px, 0);
+}
+
+.form-switch input {
+    display: none;
+}
+
+.form-switch input:checked+i {
+    background-color: #4BD763;
+}
+
+.form-switch input:checked+i::before {
+    transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+
+.form-switch input:checked+i::after {
+    transform: translate3d(22px, 2px, 0);
+}
+
+
+.station-note {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 380px;
+    border-radius: 5px;
+    right: 3%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    transform: translateY(-50%);
+    gap: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.note-modal-indicator {
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 5px 5px 0 0;
+    background-color: #2889a7;
+    color: white;
+    font-weight: 700;
+}
+
+.note-contents {
+    padding: 10px 20px 15px 20px;
+}
+
+.note-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.PiListBulletsBold {
+    margin-top: 2px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

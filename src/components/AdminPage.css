@@ -1,0 +1,36 @@
+.admin-bg {
+    background-color: #e6ceba;
+}
+
+.admin-welcome {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 92vh;
+}
+
+.train-logo {
+    height: 500px;
+    margin-left: 150px;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 130px;
+}
+
+.welcome-text {
+    font-weight: 1000;
+    font-size: 52px;
+    color: #d28044;
+}
+
+.mrt-text {
+    font-weight: 1000;
+    font-size: 80px;
+}

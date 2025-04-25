@@ -1,0 +1,462 @@
+.tapState-prompt {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  left: 3%;
+  top: 5%;
+  background-color: white;
+  border-radius: 5px;
+  color: #202020;
+  box-shadow: 2px 2px 6px #888888;
+}
+
+.tapState-indicator {
+  height: 10px;
+  background-color: #ffb031;
+  border-radius: 5px 5px 0 0;
+}
+
+.tapState-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.qrContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ffb031;
+  padding-block: 10px;
+}
+
+.tapState-station {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ffb031;
+  gap: 5px;
+  /* background-color:#ffb031; */
+}
+
+
+/* UID ///////////////////// */
+.uid-input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.uid-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #888;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  height: 40px;
+  padding-inline: 10px;
+}
+
+.uid-input {
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #888;
+  padding-inline: 10px;
+  width: 380px;
+  height: 40px;
+  outline: none;
+}
+
+.uid-input.focus {
+  border: 1px solid #ffb031;
+}
+
+.uid-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+/* USER DISPLAY ///////////////// */
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  border: 2px dashed #202020;
+  background-color: white;
+  margin: 10px 0 5px 20px;
+  box-shadow: 1px 1px 6px #888888;
+  padding: 15px 15px 15px 20px;
+}
+
+.tapCard-icon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 275px;
+  left: 295px;
+  opacity: 10%;
+}
+
+.cancel-submit {
+  position: absolute;
+  left: 25px;
+  top: 320px;
+  border-radius: 50%;
+  border: 1px solid #202020;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.cancel-submit:hover {
+  background-color: #ffb031;
+  color: white;
+}
+
+.uid-display {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.uid-value {
+  display: flex;
+}
+
+.uid-text {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a3a3a3;
+  transform: translateY(6px);
+}
+
+.balance-display {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-weight: 1000;
+  font-size: 42px;
+  color: #204491;
+}
+
+.bal-value {
+  display: flex;
+}
+
+.bal-text {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a3a3a3;
+  transform: translateY(15px);
+}
+
+/* TAP BUTTONS //////////////////////// */
+.tapState-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  /* padding-top: 20px; */
+}
+
+.tapIn,
+.tapOut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+.checkBal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+/* ticket ////////////// */
+
+.ticket-container {
+  position: absolute;
+  bottom: 5svh;
+  right: 3svw;
+  gap: 10px;
+  font-size: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ticket-container:hover {
+  transform: scale(1.5) translateY(-20%) translateX(-20%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.ticket-top {
+  background-color: #ffb031;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 2px dashed white;
+
+  -webkit-mask-image:
+    radial-gradient(circle at bottom left, transparent 10px, black 11px),
+    radial-gradient(circle at bottom right, transparent 10px, black 11px);
+  -webkit-mask-position: top left, top right, bottom left, bottom right;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 50% 50%;
+  mask-image:
+    radial-gradient(circle at bottom left, transparent 10px, black 11px),
+    radial-gradient(circle at bottom right, transparent 10px, black 11px);
+  mask-position: bottom left, bottom right;
+  mask-repeat: no-repeat;
+  mask-size: 60% 100%;
+}
+
+.ticket-top {
+  /* Your existing styles */
+  transition: transform 0.5s ease;
+  transform: translateY(-30%);
+}
+
+.ticket-top.show {
+  transform: translateY(0);
+}
+
+
+.ticket-bottom {
+  cursor: pointer;
+  background-color: #ffb031;
+  width: 250px;
+  height: 100px;
+  border-radius: 0 0 5px 5px;
+  border-top: 2px dashed white;
+
+  -webkit-mask-image:
+    radial-gradient(circle at top left, transparent 10px, black 11px),
+    radial-gradient(circle at top right, transparent 10px, black 11px);
+  -webkit-mask-position: top left, top right, bottom left, bottom right;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 50% 100%;
+  mask-image:
+    radial-gradient(circle at top left, transparent 10px, black 11px),
+    radial-gradient(circle at top right, transparent 10px, black 11px);
+  mask-position: top left, top right;
+  mask-repeat: no-repeat;
+  mask-size: 60% 100%;
+}
+
+.another-inner-top {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 238px;
+  height: 73px;
+  margin-left: 6px;
+  bottom: 170px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #202020;
+}
+
+.ticket-uid-label,
+.ticket-bal-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #b6b6b6;
+}
+
+.ticket-uid,
+.ticket-bal {
+  color: #202020;
+}
+
+.inner-top {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 238px;
+  height: 150px;
+  margin-left: 6px;
+  bottom: 15px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #202020;
+
+}
+
+.initial-station-label,
+.final-station-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #b6b6b6;
+  width: 100%;
+  align-items: center;
+}
+
+.initial-station,
+.final-station {
+  display: flex;
+  align-self: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #202020;
+}
+
+.initial-station {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #202020;
+}
+
+.final-station-label {
+  border-top: 1px solid #202020;
+}
+
+.line-direction {
+  display: flex;
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  transform: rotate(90deg)
+}
+
+.inner-bottom {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 238px;
+  height: 80px;
+  margin-left: 6px;
+  bottom: 6px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #202020;
+
+}
+
+.inner-bottom-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 5px;
+}
+
+.inner-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #202020;
+  padding: 5px;
+  width: 70px;
+}
+
+.dist-label,
+.newbal-label {
+  color: #b6b6b6;
+}
+
+.distance-label,
+.new-bal-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.new-total {
+  display: flex;
+  flex-direction: row;
+}
+
+.ticket-fare-text {
+  display: flex;
+  justify-content: center;
+  color: #b6b6b6;
+}
+
+.ticket-fare-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: #Ee3e3e;
+}
+
+/* responsiveness /////////// */
+@media screen and (max-width: 600px) {
+  .tapState-prompt {
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    max-width: 370px;
+  }
+
+  .user-card {
+    margin-left: 5px;
+    width: 360px;
+    height: 185px;
+  }
+
+  .cancel-submit {
+    left: 10px;
+
+  }
+
+  .tapCard-icon {
+    width: 135px;
+    height: 135px;
+    top: 115px;
+    left: 255px;
+  }
+
+  .ticket-container {
+    position: absolute;
+    bottom: 3%;
+    left: 55%;
+    transform: translateX(-50%);
+    gap: 10px;
+    font-size: 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .ticket-container:hover {
+    transform: scale(1.5) translateY(-16%) translateX(-63%);
+    transition: transform 0.5s ease-in-out;
+  }
+}
