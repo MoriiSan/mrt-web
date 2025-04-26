@@ -1,4 +1,3 @@
-import React from 'react';
 import './AdminPage.css';
 import trainLogo from '../assets/train-logo.jpg'
 

@@ -1,5 +1,5 @@
 import graphlib from "graphlib";
-import { haversine } from "./calcDistance";
+// import { haversine } from "./calcDistance";
 
 interface Station {
     id(id: any): string;

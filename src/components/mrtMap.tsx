@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { MapContainer, Marker, Popup, TileLayer, Polyline } from 'react-leaflet';
 import { Icon } from "leaflet";
-import { IoEnterOutline } from "react-icons/io5";
 import { RiUserLocationLine, RiArrowGoBackFill } from "react-icons/ri";
 import { PiListBulletsBold } from "react-icons/pi";
 import { TbCurrencyPeso } from "react-icons/tb";

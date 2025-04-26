@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import {useState}  from 'react';
 import lineBigImage from '../assets/lineBig.png';
 import './card.css';
 

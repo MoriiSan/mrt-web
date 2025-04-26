@@ -1,4 +1,4 @@
-import React, {useState}  from 'react';
+import {useState}  from 'react';
 import { BsArrowLeftShort, BsFillTrainFrontFill, BsHash, BsPinMapFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import './sideBar.css';
